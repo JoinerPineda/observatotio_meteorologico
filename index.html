@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Temperaturas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Registro de Temperaturas</h1>
+        <div>
+            <label for="tempInput">Ingresa una temperatura (°C): </label>
+            <input type="text" id="tempInput">
+            <button onclick="agregarTemperatura()">Agregar Temperatura</button>
+            <button onclick="finalizarRegistro()">Finalizar Registro</button>
+        </div>
+
+        <div id="resultados">
+            <h2>Resultados</h2>
+            <p id="maxTemp"></p>
+            <p id="minTemp"></p>
+            <p id="promedioTemp"></p>
+            <p id="tempAboveAverage"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
